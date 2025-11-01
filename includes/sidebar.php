@@ -32,7 +32,7 @@ while ($result=mysqli_fetch_array($query1)) {
   <label class="control-label"  style="font-size:20px;">Activity Categories</label>
   <hr />
              <ul class="list">
-<?php $query=mysqli_query($con,"select CategoryName,count(tblposts.id) as totalpost,tblcategory.id as catid from tblposts  join tblcategory on tblcategory.id=tblposts.CategoryId where tblposts.Is_Active=1   group by CategoryName");
+<?php $query = mysqli_query($con, "SELECT c.CategoryName, COUNT(p.id) AS totalpost, c.id AS catid FROM tblposts p JOIN tblcategory c ON c.id = p.CategoryId WHERE p.Is_Active = 1 GROUP BY c.id, c.CategoryName;");
 while($row=mysqli_fetch_array($query))
 {
 ?>

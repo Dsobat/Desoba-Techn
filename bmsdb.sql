@@ -98,12 +98,14 @@ CREATE TABLE `tblcomments` (
 -- Dumping data for table `tblcomments`
 --
 
-INSERT INTO `tblcomments` (`id`, `postId`, `name`, `email`, `comment`, `postingDate`, `status`) VALUES
-(1, 12, 'Anuj', 'anuj@gmail.com', 'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.', '2021-11-20 18:30:00', 1),
-(2, 12, 'Test user', 'test@gmail.com', 'This is sample text for testing.', '2021-11-20 18:30:00', 1),
-(3, 7, 'ABC', 'abc@test.com', 'This is sample text for testing.', '2021-11-20 18:30:00', 0),
-(4, 7, 'Anuj', 'ak@gmail.com', 'This is a test comment.', '2022-03-26 10:10:51', 1),
-(5, 7, 'Test user', 'test@gmail.com', 'This is a test comment.', '2022-03-28 17:25:59', 1);
+INSERT INTO `tblcomments` (`id`, `postId`, `name`, `email`, `comment`, `postingDate`, `status`)
+VALUES (1, 12, 'Anuj', 'anuj@gmail.com',
+        'Sit at ease, free from trouble, in no weighty condition. Have no concern before being called. Be pure in spirit, balanced in speech, and calm in living.',
+        '2021-11-20 18:30:00', 1),
+       (2, 12, 'Test user', 'test@gmail.com', 'This is sample text for testing.', '2021-11-20 18:30:00', 1),
+       (3, 7, 'ABC', 'abc@test.com', 'This is sample text for testing.', '2021-11-20 18:30:00', 0),
+       (4, 7, 'Anuj', 'ak@gmail.com', 'This is a test comment.', '2022-03-26 10:10:51', 1),
+       (5, 7, 'Test user', 'test@gmail.com', 'This is a test comment.', '2022-03-28 17:25:59', 1);
 
 -- --------------------------------------------------------
 
